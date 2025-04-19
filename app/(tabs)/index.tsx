@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <View style={styles.container}>
       <Link href="/notifications">
-        <Text>Visit Notification screeen</Text>
+        <Text style={{ color: "red" }}>Visit Notification screeen</Text>
       </Link>
     </View>
   );

@@ -38,7 +38,7 @@ const TabsLayout = () => {
       <Tabs.Screen
         name="create"
         options={{
-          tabBarIcon: ({ size, color }) => (
+          tabBarIcon: ({ size }) => (
             <Ionicons name="add-circle" size={size} color={COLORS.primary} />
           ),
         }}

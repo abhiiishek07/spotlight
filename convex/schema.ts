@@ -54,7 +54,7 @@ export default defineSchema({
     commentId: v.optional(v.id("comments")),
   }).index("by_receiver", ["receiverId"]),
 
-  bookmars: defineTable({
+  bookmarks: defineTable({
     userId: v.id("users"),
     postId: v.id("posts"),
   })

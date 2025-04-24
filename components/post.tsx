@@ -107,6 +107,12 @@ const Post = ({ post }: { post: postProps }) => {
             ? `${likesCnt.toLocaleString()} likes`
             : "Be the first one to like"}
         </Text>
+        {post.caption && (
+          <View style={styles.captionContainer}>
+            <Text style={styles.captionUsername}>{post.author.username}</Text>{" "}
+            <Text style={styles.captionText}>{post.caption}</Text>
+          </View>
+        )}
       </View>
     </View>
   );

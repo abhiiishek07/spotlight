@@ -52,7 +52,7 @@ export const getComments = query({
         return {
           ...comment,
           user: {
-            fullname: user!.fullname,
+            fullName: user!.fullName,
             image: user!.image,
           },
         };

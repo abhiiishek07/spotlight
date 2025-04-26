@@ -4,10 +4,10 @@ import { v } from "convex/values";
 export default defineSchema({
   users: defineTable({
     username: v.string(),
-    fullname: v.string(),
+    fullName: v.string(),
     email: v.string(),
     bio: v.optional(v.string()),
-    image: v.string(),
+    image: v.optional(v.string()),
     followers: v.number(),
     following: v.number(),
     posts: v.number(),
@@ -17,7 +17,7 @@ export default defineSchema({
   posts: defineTable({
     userId: v.id("users"),
     imageUrl: v.string(),
-    storageId: v.id("_storage"),
+    storageId: v.id("_storage"), // will be needed when we want to delete a post
     caption: v.optional(v.string()),
     likes: v.number(),
     comments: v.number(),
@@ -27,7 +27,7 @@ export default defineSchema({
     userId: v.id("users"),
     postId: v.id("posts"),
   })
-    .index("by_post", ["userId"])
+    .index("by_post", ["postId"])
     .index("by_user_and_post", ["userId", "postId"]),
 
   comments: defineTable({
@@ -42,7 +42,7 @@ export default defineSchema({
   })
     .index("by_follower", ["followerId"])
     .index("by_following", ["followingId"])
-    .index("both", ["followerId", "followingId"]),
+    .index("by_both", ["followerId", "followingId"]),
 
   notifications: defineTable({
     receiverId: v.id("users"),
@@ -50,13 +50,23 @@ export default defineSchema({
     type: v.union(v.literal("like"), v.literal("comment"), v.literal("follow")),
     postId: v.optional(v.id("posts")),
     commentId: v.optional(v.id("comments")),
-  }).index("by_receiver", ["receiverId"]),
+  })
+    .index("by_receiver", ["receiverId"])
+    .index("by_post", ["postId"]),
 
   bookmarks: defineTable({
     userId: v.id("users"),
     postId: v.id("posts"),
   })
+    .index("by_user_and_post", ["userId", "postId"])
     .index("by_user", ["userId"])
-    .index("by_post", ["postId"])
-    .index("by_user_and_post", ["userId", "postId"]),
+    .index("by_post", ["postId"]),
+
+  stories: defineTable({
+    userId: v.id("users"),
+    imageUrl: v.string(),
+    storageId: v.id("_storage"),
+    createdAt: v.number(),
+    expiresAt: v.number(),
+  }).index("by_user", ["userId"]),
 });

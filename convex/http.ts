@@ -63,12 +63,9 @@ http.route({
       try {
         await ctx.runMutation(api.users.createUser, {
           username: email.split("@")[0],
-          fullname: name,
+          fullName: name,
           email: email,
           image: image_url,
-          followers: 0,
-          following: 0,
-          posts: 0,
           clerkId: id,
         });
         console.log("user created succ");

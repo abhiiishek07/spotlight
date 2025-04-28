@@ -2,6 +2,9 @@
 
 Spotlight is a dynamic social media app built using **React Native** and **Expo**, designed to deliver a smooth and interactive experience. Inspired by platforms like Instagram, Spotlight allows users to share, engage, and explore content effortlessly.
 
+![Feed](./1.JPG) ![Create Post](./6.JPG) ![Profile](./2.JPG)  
+![Bookmarks](./4.jpg) ![Notifications](./5.JPG) ![Sign In](./3.JPG)
+
 ---
 
 ## ✨ Features
@@ -48,13 +51,21 @@ Follow these steps to run the project locally:
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/abhiiishek07/spotlight
-
-2. **Install dependencies**
+git clone https://github.com/abhiiishek07/spotlight.git
+```
+2. **Install Dependencies**
 ```bash
-
 npm install
 # or
 yarn install
+```
 
+3. **Set up environment variables**
+```bash
+Create a .env.local file at the root and add your API keys and configuration for Convex, Clerk, etc
+```
 
+4. **Start the development server**
+```bash
+npx expo start
+```

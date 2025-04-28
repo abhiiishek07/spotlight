@@ -9,7 +9,7 @@ Spotlight is a dynamic social media app built using **React Native** and **Expo*
 </p>
 
 <p align="center">
-  <img src="assets/images/screenshots/4.JPG" alt="Screenshot 4" width="30%" />
+  <img src="assets/images/screenshots/4.jpg" alt="Screenshot 4" width="30%" />
   <img src="assets/images/screenshots/5.JPG" alt="Screenshot 5" width="30%" />
   <img src="assets/images/screenshots/6.JPG" alt="Screenshot 6" width="30%" />
 </p>

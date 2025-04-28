@@ -1,50 +1,60 @@
-# Welcome to your Expo app 👋
+# 📸 Spotlight - A Social Media App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Spotlight is a dynamic social media app built using **React Native** and **Expo**, designed to deliver a smooth and interactive experience. Inspired by platforms like Instagram, Spotlight allows users to share, engage, and explore content effortlessly.
 
-## Get started
+---
 
-1. Install dependencies
+## ✨ Features
 
-   ```bash
-   npm install
-   ```
+✅ **Create Posts** – Share your moments through posts with text and images.  
+✅ **Feed Page** – Scroll through posts shared by users.  
+✅ **Bookmarks** – Save posts you like for later viewing.  
+✅ **Notifications** – Stay updated with likes, comments, and follows.  
+✅ **Sign In / Sign Up** – Secure authentication flow for easy access.  
+✅ **Profile Page** – Manage your personal profile, edit bio, profile picture, and more.  
+✅ **Public Profiles** – View other users’ public profiles and posts.  
+✅ **Likes and Comments** – Like and comment on posts to engage with the community.  
+✅ **Responsive UI** – Seamless experience across all devices.
 
-2. Start the app
+---
 
-   ```bash
-    npx expo start
-   ```
+## 🛠️ Tech Stack
 
-In the output, you'll find options to open the app in a
+- **React Native** – Cross-platform mobile development
+- **Expo** – Fast development and easy testing
+- **TypeScript** – Type-safe codebase
+- **Convex** – Backend as a service with real-time capabilities
+- **Clerk** – Authentication and user management
+- **NativeWind** – Utility-first styling for React Native
+- **Expo Router** – Smooth navigation between screens
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📱 App Structure
 
-## Get a fresh project
+- **Home Feed** – Discover the latest posts from the community
+- **Create Post** – Share your own posts with images and text
+- **Profile Page** – Manage your information and view your posts
+- **Public Profile Page** – Explore profiles of other users
+- **Bookmarks** – Quickly access your favorite posts
+- **Notifications** – View updates about your likes, comments, and follows
+- **Authentication** – Secure Sign In / Sign Up process
 
-When you're ready, run:
+---
 
+## 🚀 Getting Started
+
+Follow these steps to run the project locally:
+
+1. **Clone the repository**
 ```bash
-npm run reset-project
-```
+git clone https://github.com/abhiiishek07/spotlight
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. **Install dependencies**
+```bash
 
-## Learn more
+npm install
+# or
+yarn install
 
-To learn more about developing your project with Expo, look at the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.

@@ -84,7 +84,11 @@ const Post = ({ post }: { post: postProps }) => {
     <View style={styles.post}>
       <View style={styles.postHeader}>
         <Link
-          href={{ pathname: `/user/[id]`, params: { id: post.author._id } }}
+          href={{
+            pathname: `/user/[id]`,
+            params: { id: post.author._id as string | number },
+          }}
+          asChild
         >
           <TouchableOpacity style={styles.postHeaderLeft}>
             <Image
